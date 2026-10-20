@@ -17,14 +17,16 @@ An assistive tool for **endless 2048** supporting **3×3 / 4×4 / 5×5** boards.
 
 ## 4×4 Success Rates
 
-The 4×4 engine follows the classic Expectimax approach of [ziap/2048-ai](https://github.com/ziap/2048-ai). Official benchmark figures from that project:
+The 4×4 engine follows the classic Expectimax approach of [ziap/2048-ai](https://github.com/ziap/2048-ai). Official benchmark figures from that project (AMD Ryzen 5 5600G; avg score and tile rates from 1000 games across 12 cores):
 
-| Budget | Speed | Avg Score | %32768 | %16384 | %8192 |
-|--------|-------|-----------|--------|--------|-------|
-| 2^15   | 1324.1 | 259989  | 3.6    | 58.2   | 91.6  |
-| 2^17   | 384.0  | 319221  | 9.1    | 74.0   | 95.5  |
-| 2^19   | 119.5  | 371887  | 17.6   | 84.6   | 98.1  |
-| 2^21   | 26.8   | 419545  | 26.5   | 89.9   | 99.2  |
+| Budget | Speed | Avg Score | %65536 | %32768 | %16384 | %8192 |
+|--------|-------|-----------|--------|--------|--------|-------|
+| 2^15   | 1639.1 | 313838  | 0.0    | 9.1    | 72.1   | 95.8  |
+| 2^17   | 419.0  | 389180  | 0.0    | 21.6   | 85.0   | 97.5  |
+| 2^19   | 125.9  | 468109  | 0.1    | 39.1   | 91.1   | 98.9  |
+| 2^21   | 25.5   | 530970  | 0.2    | 51.7   | 94.7   | 99.1  |
+
+> Meter 2048 Auto's own 4×4 engine averages about **650,000** at the 2^21 budget (measured on this software).
 
 ## Download
 
