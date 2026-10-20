@@ -1,0 +1,11 @@
+Build outputs
+x64/
+*.pdb
+*.obj
+release_pkg/
+_bench/
+.vs/
+History Record/
+logs/
+*.dat
+*.ini
